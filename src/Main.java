@@ -1,4 +1,4 @@
-import java.time.LocalDate;
+
 
 public class Main {
 
@@ -13,18 +13,17 @@ public class Main {
 
     //Задание 2
     public static void printInstallApp(int typeOS, int releaseYear) {
-        int currentYear = LocalDate.now().getYear();
 
-        if (releaseYear < currentYear && typeOS == 0) {
+        if (releaseYear < 2015 && typeOS == 0) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке\n");
         }
-        if (releaseYear < currentYear && typeOS == 1) {
+        if (releaseYear < 2015 && typeOS == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке\n");
         }
-        if (releaseYear >= currentYear && typeOS == 0) {
+        if (releaseYear >= 2015 && typeOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке\n");
         }
-        if (releaseYear >= currentYear && typeOS == 1) {
+        if (releaseYear >= 2015 && typeOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке\n");
         }
     }
